@@ -3,7 +3,7 @@ import './SignUp.css'
 
 export const SignUp = ({setName, setWelcome, setSignUp, setSignUpName}) => {
 
-    const [regname, setRegname] = useState('REGISTER')
+    
 
     const namehandler = (event) =>{
         setName(event.target.value)
@@ -20,7 +20,7 @@ export const SignUp = ({setName, setWelcome, setSignUp, setSignUpName}) => {
                     setWelcome(true)
                     setSignUpName('Sign Out')
                     setSignUp(false)
-                    }} className="enter">{regname}</button>
+                    }} className="enter">REGISTER</button>
             </div>
         </div>
     )
