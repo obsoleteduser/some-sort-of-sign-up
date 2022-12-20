@@ -9,11 +9,12 @@ function App() {
   const [name, setName] = useState('')
   const [signUp, setSignUp] = useState(false)
   const [welcome, setWelcome] = useState(false)
+  const [signUpName, setSignUpName] = useState('Sign Up')
 
   return (
     <div className="App">
-    {signUp && <SignUp setSignUp={setSignUp} setWelcome={setWelcome} setName={setName}></SignUp> }
-      <Header sign={setSignUp}></Header>
+    {signUp && <SignUp setSignUpName={setSignUpName} setSignUp={setSignUp} setWelcome={setWelcome} setName={setName}></SignUp> }
+      <Header signUpName={signUpName} sign={setSignUp}></Header>
      {welcome && <Welcome name={name}></Welcome>}
     </div>
   )

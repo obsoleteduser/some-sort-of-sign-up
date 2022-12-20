@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './SignUp.css'
 
-export const SignUp = ({setName, setWelcome, setSignUp}) => {
+export const SignUp = ({setName, setWelcome, setSignUp, setSignUpName}) => {
 
     const [regname, setRegname] = useState('REGISTER')
 
@@ -18,8 +18,8 @@ export const SignUp = ({setName, setWelcome, setSignUp}) => {
                 <input type="password" className="password" name="" id="" placeholder='Password:'/>
                 <button type='submit' onClick={()=>{
                     setWelcome(true)
+                    setSignUpName('Sign Out')
                     setSignUp(false)
-                    
                     }} className="enter">{regname}</button>
             </div>
         </div>
